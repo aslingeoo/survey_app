@@ -38,10 +38,10 @@ class _SurveyScreenState extends State<SurveyView> {
                     final task = snapshot.data!;
                     List<Widget> questionList = [];
                     print(task);
-                    for (var question in task['steps']) {
+                    for (var question in task) {
                       print(question);
                       questionList.add(FormSection(
-                        title: question['section'],
+                        title: question['type'],
                         message: question['title'],
                         question: question['text'],
                         options: const [
