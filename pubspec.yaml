@@ -40,6 +40,8 @@ dependencies:
   hive_flutter: ^1.1.0
   survey_kit: ^0.1.2
   flutter_form_builder: null
+  uuid: ^3.0.6
+
 
 dev_dependencies:
   flutter_test:

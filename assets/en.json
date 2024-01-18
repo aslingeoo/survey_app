@@ -1,43 +1,46 @@
-{
-    "id": "survey",
-    "type": "navigable",
-    "steps":[
-        {
-           "type":"Acceptance",
-          "title": "“I distinguish my capacity to recognise factors beyond my control from my ability to intellectually pinpoint the reasons for such limitations, understanding that true acceptance hinges on cognitive comprehension rather than emotional reactions.",
-          "steps":[
-                    {
-                     
-                      
-                        "text": "How important is it that I achieve this?",
-                        "content":0
-                    },
-                    {
-                      
-                       
-                        "text": "How do I rate my performance against this?",
-                        "content":1
-                    }
-                ]
-        },
-        {
-            "type":"Ambition",
-            "title": "“I closely assess my drive to embrace challenges as avenues for growth, my ability to manage my fear of failure, and my consistent commitment to self-care, recognising that true ambition balances aspiration with well-being to fortify self-confidence and mental resilience.\"",
-           "steps":[
-                     {
-                      
-                       
-                         "text": "How important is it that I achieve this?",
-                         "content":0
-                     },
-                     {
-                       
-                       
-                         "text": "How do I rate my performance against this?",
-                         "content":1
-                     }
-                 ]
-         }
-    ]
-}
-
+[
+    {
+        "id": "survey",
+        "type": "navigable",
+        "steps":[
+            {
+               "type":"Acceptance",
+              "title": "“I distinguish my capacity to recognise factors beyond my control from my ability to intellectually pinpoint the reasons for such limitations, understanding that true acceptance hinges on cognitive comprehension rather than emotional reactions.",
+              "steps":[
+                        {
+                         
+                          
+                            "text": "How important is it that I achieve this?",
+                            "content":0
+                        },
+                        {
+                          
+                           
+                            "text": "How do I rate my performance against this?",
+                            "content":1
+                        }
+                    ]
+            },
+            {
+                "type":"Ambition",
+                "title": "“I closely assess my drive to embrace challenges as avenues for growth, my ability to manage my fear of failure, and my consistent commitment to self-care, recognising that true ambition balances aspiration with well-being to fortify self-confidence and mental resilience.\"",
+               "steps":[
+                         {
+                          
+                           
+                             "text": "How important is it that I achieve this?",
+                             "content":0
+                         },
+                         {
+                           
+                           
+                             "text": "How do I rate my performance against this?",
+                             "content":1
+                         }
+                     ]
+             }
+        ]
+    }
+    
+    
+]

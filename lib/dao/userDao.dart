@@ -4,7 +4,7 @@ import 'package:hive/hive.dart';
 class UsersDao {
   Box? _database;
 
-    static final UsersDao _singleton = UsersDao._();
+  static final UsersDao _singleton = UsersDao._();
   static UsersDao get instance => _singleton;
   UsersDao._();
 
@@ -29,5 +29,9 @@ class UsersDao {
   get(String uid) async {
     String id = "user$uid";
     return await _database!.get(id);
+  }
+
+  getAll() async {
+    return await _database!.values.toList();
   }
 }

@@ -14,7 +14,21 @@ class SurveyView extends StatefulWidget {
 
 class _SurveyScreenState extends State<SurveyView> {
   final GlobalKey<FormBuilderState> _formKey = GlobalKey<FormBuilderState>();
-
+  List acceptanceAnswer = [
+    'Not a Priority',
+    'Low Priority',
+    'Priority',
+    'High Priority',
+    'Critical',
+  ];
+  List ambitionAnswer = [
+    'I am terrible at this',
+    'I am poor at this',
+    'I am average at this',
+    'I am good at this',
+    'I am excellent at this'
+  ];
+  RxInt index = 0.obs;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +54,7 @@ class _SurveyScreenState extends State<SurveyView> {
                     print(task);
                     for (var question in task) {
                       print(question);
+
                       questionList.add(FormSection(
                         title: question['type'],
                         message: question['title'],
@@ -54,7 +69,8 @@ class _SurveyScreenState extends State<SurveyView> {
                       ));
                     }
 
-                    return Expanded(child: ListView(
+                    return Expanded(
+                        child: ListView(
                       children: [...questionList],
                     ));
                   }
@@ -69,7 +85,7 @@ class _SurveyScreenState extends State<SurveyView> {
                     print(_formKey.currentState!.value);
                   }
                 },
-                child: const Text('Submit'),
+                child: const Text('Next Section'),
               ),
             ],
           ),
@@ -80,8 +96,11 @@ class _SurveyScreenState extends State<SurveyView> {
 
   Future getJsonTask() async {
     final String taskJson = await rootBundle.loadString('en.json');
-    final Map<String, dynamic> taskMap = json.decode(taskJson);
-    return taskMap;
+
+    List<Map<String, dynamic>> dartListOfMaps =
+        List<Map<String, dynamic>>.from(json.decode(taskJson));
+
+    return dartListOfMaps;
   }
 }
 

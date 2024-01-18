@@ -51,7 +51,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.toNamed("/login");
+                        Get.toNamed("/login",arguments: selectedLanguage);
                       },
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
