@@ -1,13 +1,13 @@
 {
-    "id": "123",
+    "id": "survey",
     "type": "navigable",
-    
     "steps":[
         {
             "stepIdentifier": {
                 "id": "1"
             },
             "type": "question",
+            "section":"Acceptance",
             "title": "“I distinguish my capacity to recognise factors beyond my control from my ability to intellectually pinpoint the reasons for such limitations, understanding that true acceptance hinges on cognitive comprehension rather than emotional reactions.",
             "text": "How important is it that I achieve this?",
             "content":"",
@@ -41,6 +41,7 @@
                 "id": "2"
             },
             "type": "question",
+            "section":"Ambition",
             "title": "“I distinguish my capacity to recognise factors beyond my control from my ability to intellectually pinpoint the reasons for such limitations, understanding that true acceptance hinges on cognitive comprehension rather than emotional reactions.",
             "text": "How do I rate my performance against this?",
             "answerFormat": {
@@ -70,3 +71,4 @@
         }
     ]
 }
+
